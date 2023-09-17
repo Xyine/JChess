@@ -63,10 +63,11 @@ public class BoardUtils {
                 "a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1"
         };
     }
+
     public static boolean isValidTileCoordinate(final int coordinate) {
         return coordinate >= START_TILE_INDEX && coordinate < NUM_TILES;
     }
-    public int getCoordinateAtPosition(final String position){
+    public static int getCoordinateAtPosition(final String position){
         return POSITION_TO_COORDINATE.get(position);
     }
     public static String getPositionAtCoordinate(final int coordinate){
